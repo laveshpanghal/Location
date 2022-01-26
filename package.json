@@ -1,0 +1,66 @@
+{
+  "name": "zeshuser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/ui-react": "^0.2.23",
+    "@craco/craco": "^6.4.3",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "autoprefixer": "^9.8.6",
+    "dompurify": "^2.2.6",
+    "draft-convert": "^2.1.10",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "draftjs-to-markdown": "^0.6.0",
+    "firebase": "^9.0.1",
+    "google-map-react": "^2.1.9",
+    "html-to-draftjs": "^1.5.0",
+    "i": "^0.3.6",
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.29.1",
+    "npm": "^7.6.0",
+    "postcss": "^7.0.35",
+    "react": "^16.13.1",
+    "react-cool-onclickoutside": "^1.5.7",
+    "react-dom": "^16.13.1",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-leaflet": "^3.2.5",
+    "react-qr-reader": "^2.2.1",
+    "react-redux": "^7.2.1",
+    "react-redux-firebase": "^3.10.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-toastify": "^7.0.3",
+    "reactive-qr": "^0.1.8",
+    "redux": "^4.0.5",
+    "redux-firestore": "^0.15.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "use-places-autocomplete": "^1.5.7",
+    "uuid": "^8.3.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "aws-amplify": "^4.2.8",
+    "prettier": "2.4.1"
+  }
+}

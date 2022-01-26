@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/requests",
+            "lambdaFunction": "zeshRequestLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/requests"
+        }
+    ],
+    "resourceName": "zeshClientApi",
+    "apiName": "zeshClientApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "zeshRequestLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-zeshuser-dev-155508-authRole",
+        "unAuthRoleName": "amplify-zeshuser-dev-155508-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "zeshRequestLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

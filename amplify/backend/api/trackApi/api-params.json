@@ -1,0 +1,38 @@
+{
+    "paths": [
+        {
+            "name": "/track",
+            "lambdaFunction": "trackApiLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST"
+                ]
+            },
+            "policyResourceName": "/track"
+        }
+    ],
+    "resourceName": "trackApi",
+    "apiName": "trackApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "trackApiLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-zeshuser-dev-155508-authRole",
+        "unAuthRoleName": "amplify-zeshuser-dev-155508-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "trackApiLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

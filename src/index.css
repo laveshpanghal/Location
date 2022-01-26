@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wasteSpace-container {
+  position: relative;
+}
+
+.centerLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+.checkbox-Product {
+  position: absolute;
+  top: 12%;
+}
+
+.checkbox-Consumer {
+  position: absolute;
+  top: 16%;
+  right: 30%;
+}
+
+.checkbox-Waste {
+
+  padding-top: 20px;
+  position: absolute;
+  top: 33%;
+  left: 20%;
+}
+
+.checkbox-Transporter {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+
+.checkbox-Processor {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+
+.checkbox-Municipal {
+  position: absolute;
+  top: 83%;
+  right: 29%;
+}
+
+.checkbox-Awareness {
+  position: absolute;
+  top: 100%;
+  left: 4%;
+}
+
+
+
+amplify-authenticator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
+}

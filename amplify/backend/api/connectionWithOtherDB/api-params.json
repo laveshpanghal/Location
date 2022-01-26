@@ -1,0 +1,45 @@
+{
+    "paths": [
+        {
+            "name": "/events",
+            "lambdaFunction": "connectionWithOtherDBLambda",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/events"
+        }
+    ],
+    "resourceName": "connectionWithOtherDB",
+    "apiName": "connectionWithOtherDB",
+    "functionArns": [
+        {
+            "lambdaFunction": "connectionWithOtherDBLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-zeshuser-dev-155508-authRole",
+        "unAuthRoleName": "amplify-zeshuser-dev-155508-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "connectionWithOtherDBLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

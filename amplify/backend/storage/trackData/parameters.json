@@ -1,0 +1,7 @@
+{
+    "tableName": "trackData",
+    "partitionKeyName": "city",
+    "partitionKeyType": "S",
+    "sortKeyName": "date",
+    "sortKeyType": "S"
+}

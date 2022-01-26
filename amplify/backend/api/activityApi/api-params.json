@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/activity",
+            "lambdaFunction": "activityApiLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/activity"
+        }
+    ],
+    "resourceName": "activityApi",
+    "apiName": "activityApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "activityApiLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-zeshuser-dev-155508-authRole",
+        "unAuthRoleName": "amplify-zeshuser-dev-155508-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "activityApiLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

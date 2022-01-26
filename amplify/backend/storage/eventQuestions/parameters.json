@@ -1,0 +1,7 @@
+{
+    "tableName": "eventQuestions",
+    "partitionKeyName": "eventId",
+    "partitionKeyType": "S",
+    "sortKeyName": "userId_timeStamp",
+    "sortKeyType": "S"
+}

@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/volunteer",
+            "lambdaFunction": "volunteerMainLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/volunteer"
+        }
+    ],
+    "resourceName": "volunteerRequest",
+    "apiName": "volunteerRequest",
+    "functionArns": [
+        {
+            "lambdaFunction": "volunteerMainLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-zeshuser-dev-155508-authRole",
+        "unAuthRoleName": "amplify-zeshuser-dev-155508-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "volunteerMainLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

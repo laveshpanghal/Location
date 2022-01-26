@@ -1,0 +1,7 @@
+{
+    "tableName": "trackDataCollector",
+    "partitionKeyName": "collector_id",
+    "partitionKeyType": "S",
+    "sortKeyName": "date",
+    "sortKeyType": "S"
+}

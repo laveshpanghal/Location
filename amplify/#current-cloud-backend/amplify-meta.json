@@ -1,0 +1,644 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-zeshuser-dev-155508-authRole",
+      "UnauthRoleArn": "arn:aws:iam::516431753175:role/amplify-zeshuser-dev-155508-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::516431753175:role/amplify-zeshuser-dev-155508-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-zeshuser-dev-155508-deployment",
+      "UnauthRoleName": "amplify-zeshuser-dev-155508-unauthRole",
+      "StackName": "amplify-zeshuser-dev-155508",
+      "StackId": "arn:aws:cloudformation:ap-south-1:516431753175:stack/amplify-zeshuser-dev-155508/38d891f0-07be-11eb-8478-0a8dc5699504",
+      "AmplifyAppId": "d2e0efz06to20p"
+    }
+  },
+  "auth": {
+    "zeshusercc4f3eba": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/auth/zeshusercc4f3eba-cloudformation-template.yml",
+        "logicalId": "authzeshusercc4f3eba"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.779Z",
+      "output": {
+        "AppClientSecret": "1t7esjkql1puvbsem2okkrqi5si14fokak3r3bjfkg6b61d58616",
+        "UserPoolId": "ap-south-1_cpg1d4aQc",
+        "AppClientIDWeb": "jl474em68riajdcbmh03l4brk",
+        "AppClientID": "n3o41ikrldg9ralgb58sqpqn1",
+        "IdentityPoolId": "ap-south-1:a7b470c1-312d-43d5-85a7-ae01fa404b43",
+        "IdentityPoolName": "zeshusercc4f3eba_identitypool_cc4f3eba__dev",
+        "UserPoolName": "zeshusercc4f3eba_userpool_cc4f3eba"
+      },
+      "lastPushDirHash": "b0sJBNUzjLNf7E0d/ofUFEeiUBA="
+    }
+  },
+  "storage": {
+    "requestTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/requestTable-cloudformation-template.json",
+        "logicalId": "storagerequestTable"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.793Z",
+      "output": {
+        "PartitionKeyName": "userId",
+        "SortKeyName": "requestId",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/requestTable-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/requestTable-dev/stream/2020-10-06T11:15:36.476",
+        "PartitionKeyType": "S",
+        "Name": "requestTable-dev"
+      },
+      "lastPushDirHash": "DdLgbi+VS6GOUABsU9ayLV48z/0="
+    },
+    "volunteerTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/volunteerTable-cloudformation-template.json",
+        "logicalId": "storagevolunteerTable"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.801Z",
+      "output": {
+        "PartitionKeyName": "eventId",
+        "SortKeyName": "phoneNumber",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/volunteerTable-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/volunteerTable-dev/stream/2020-10-07T11:28:21.111",
+        "PartitionKeyType": "S",
+        "Name": "volunteerTable-dev"
+      },
+      "lastPushDirHash": "24r1ZljY3/MTmeq2NeNS/kGpb84="
+    },
+    "trackData": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/trackData-cloudformation-template.json",
+        "logicalId": "storagetrackData"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.809Z",
+      "output": {
+        "PartitionKeyName": "city",
+        "SortKeyName": "date",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/trackData-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/trackData-dev/stream/2020-12-31T10:32:41.134",
+        "PartitionKeyType": "S",
+        "Name": "trackData-dev"
+      },
+      "lastPushDirHash": "2rXh9gFn0tw9YiAYwpkx1QpIT78="
+    },
+    "trackDataCollector": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/trackDataCollector-cloudformation-template.json",
+        "logicalId": "storagetrackDataCollector"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.817Z",
+      "output": {
+        "PartitionKeyName": "collector_id",
+        "SortKeyName": "date",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/trackDataCollector-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/trackDataCollector-dev/stream/2020-12-31T11:39:52.273",
+        "PartitionKeyType": "S",
+        "Name": "trackDataCollector-dev"
+      },
+      "lastPushDirHash": "E32lLVErLy0Pkc326xHHSacNxfo="
+    },
+    "eventQuestions": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/eventQuestions-cloudformation-template.json",
+        "logicalId": "storageeventQuestions"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.824Z",
+      "output": {
+        "PartitionKeyName": "eventId",
+        "SortKeyName": "userId_timeStamp",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/eventQuestions-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/eventQuestions-dev/stream/2021-02-16T15:45:36.773",
+        "PartitionKeyType": "S",
+        "Name": "eventQuestions-dev"
+      },
+      "lastPushDirHash": "OxfFuDQKP7okyrMQrQTg78Fw8Ng="
+    },
+    "articleTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/articleTable-cloudformation-template.json",
+        "logicalId": "storagearticleTable"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.831Z",
+      "output": {
+        "PartitionKeyName": "userId",
+        "SortKeyName": "articleId",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/articleTable-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/articleTable-dev/stream/2021-03-01T09:20:38.481",
+        "PartitionKeyType": "S",
+        "Name": "articleTable-dev"
+      },
+      "lastPushDirHash": "4RY5kktGf44bddKSSizb52C2b7Q="
+    },
+    "activityTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/storage/activityTable-cloudformation-template.json",
+        "logicalId": "storageactivityTable"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.976Z",
+      "output": {
+        "PartitionKeyName": "postTypeId",
+        "SortKeyName": "userId",
+        "SortKeyType": "S",
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:dynamodb:ap-south-1:516431753175:table/activityTable-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-south-1:516431753175:table/activityTable-dev/stream/2021-03-16T17:16:20.699",
+        "PartitionKeyType": "S",
+        "Name": "activityTable-dev"
+      },
+      "lastPushDirHash": "iGd53vZeZi7N3djR3xbtNFxlVHc="
+    }
+  },
+  "function": {
+    "zeshRequestLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "requestTable",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2021-03-04T07:05:56.127Z",
+      "lastPackageTimeStamp": "2021-03-04T07:06:04.943Z",
+      "distZipFilename": "zeshRequestLambda-7a436446336355636c31-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/zeshRequestLambda-cloudformation-template.json",
+        "logicalId": "functionzeshRequestLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.846Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:zeshRequestLambda-dev",
+        "Name": "zeshRequestLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole419ca9c3-dev"
+      },
+      "lastPushDirHash": "Xczs6XJ9Uluhz7zTL4HTVhu6mj8="
+    },
+    "connectionWithOtherDBLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "zeshClientApi",
+          "attributes": [
+            "ApiName",
+            "ApiId"
+          ]
+        }
+      ],
+      "lastBuildTimeStamp": "2020-10-08T18:55:09.046Z",
+      "lastPackageTimeStamp": "2020-10-08T18:55:12.461Z",
+      "distZipFilename": "connectionWithOtherDBLambda-36744459594f33416772-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/connectionWithOtherDBLambda-cloudformation-template.json",
+        "logicalId": "functionconnectionWithOtherDBLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.853Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:connectionWithOtherDBLambda-dev",
+        "Name": "connectionWithOtherDBLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole12b1b6f1-dev"
+      },
+      "lastPushDirHash": "Y4pdqzlAZvCExYJmIagTEkdCvhY="
+    },
+    "volunteerMainLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "volunteerTable",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2021-02-16T12:50:09.699Z",
+      "lastPackageTimeStamp": "2021-02-16T12:50:19.022Z",
+      "distZipFilename": "volunteerMainLambda-4550573331527a64414a-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/volunteerMainLambda-cloudformation-template.json",
+        "logicalId": "functionvolunteerMainLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.860Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:volunteerMainLambda-dev",
+        "Name": "volunteerMainLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole4279e900-dev"
+      },
+      "lastPushDirHash": "8yswIwCGeCvPek43ZNmYFMXzzfw="
+    },
+    "trackApiLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "trackData",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2020-12-31T11:39:22.134Z",
+      "lastPackageTimeStamp": "2020-12-31T11:39:29.757Z",
+      "distZipFilename": "trackApiLambda-447047784873496d5253-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/trackApiLambda-cloudformation-template.json",
+        "logicalId": "functiontrackApiLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.868Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:trackApiLambda-dev",
+        "Name": "trackApiLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole63c1980c-dev"
+      },
+      "lastPushDirHash": "NPuAtLjxND5jfpX2j7uVJZEZkkw="
+    },
+    "trackApiTriggerLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "trackData",
+          "attributes": [
+            "StreamArn"
+          ]
+        },
+        {
+          "category": "storage",
+          "resourceName": "trackDataCollector",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "lastBuildTimeStamp": "2020-12-31T14:16:38.928Z",
+      "lastPackageTimeStamp": "2020-12-31T14:16:38.982Z",
+      "distZipFilename": "trackApiTriggerLambda-4633795739707649666f-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/trackApiTriggerLambda-cloudformation-template.json",
+        "logicalId": "functiontrackApiTriggerLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.874Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:trackApiTriggerLambda-dev",
+        "Name": "trackApiTriggerLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole6f7f479a-dev"
+      },
+      "lastPushDirHash": "FA2LA8y9FyAalmX4RR+7k58qY7Q="
+    },
+    "eventQuestionsLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "eventQuestions",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2021-02-16T15:45:10.275Z",
+      "lastPackageTimeStamp": "2021-02-16T15:45:16.832Z",
+      "distZipFilename": "eventQuestionsLambda-6a466d39314271444f71-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/eventQuestionsLambda-cloudformation-template.json",
+        "logicalId": "functioneventQuestionsLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.879Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:eventQuestionsLambda-dev",
+        "Name": "eventQuestionsLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole8edbd1e1-dev"
+      },
+      "lastPushDirHash": "s9fGBv2ppb1Yf7ePBj1veedvO2A="
+    },
+    "articleApiLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "articleTable",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2021-03-16T16:54:00.545Z",
+      "lastPackageTimeStamp": "2021-03-16T16:54:04.523Z",
+      "distZipFilename": "articleApiLambda-6a306238486c426a7533-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/articleApiLambda-cloudformation-template.json",
+        "logicalId": "functionarticleApiLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.886Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:articleApiLambda-dev",
+        "Name": "articleApiLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRole177ea19f-dev"
+      },
+      "lastPushDirHash": "1MdAbrJZleqCXnsxiaUny4wbIeo="
+    },
+    "activityApiLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "activityTable",
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "attributeEnvMap": {
+            "Name": "TABLE_NAME",
+            "Arn": "TABLE_ARN"
+          }
+        }
+      ],
+      "lastBuildTimeStamp": "2021-03-16T17:15:54.017Z",
+      "lastPackageTimeStamp": "2021-03-16T17:15:59.083Z",
+      "distZipFilename": "activityApiLambda-6b64505243306f6d6d50-build.zip",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/function/activityApiLambda-cloudformation-template.json",
+        "logicalId": "functionactivityApiLambda"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.976Z",
+      "output": {
+        "Region": "ap-south-1",
+        "Arn": "arn:aws:lambda:ap-south-1:516431753175:function:activityApiLambda-dev",
+        "Name": "activityApiLambda-dev",
+        "LambdaExecutionRole": "zeshuserLambdaRoleb357cc2a-dev"
+      },
+      "lastPushDirHash": "oyEZdgDFin0fKMVUks/6eIIUJow="
+    }
+  },
+  "api": {
+    "zeshClientApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "zeshRequestLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/zeshClientApi-cloudformation-template.json",
+        "logicalId": "apizeshClientApi"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.901Z",
+      "output": {
+        "ApiName": "zeshClientApi",
+        "RootUrl": "https://1ktn95nyg4.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "1ktn95nyg4"
+      },
+      "lastPushDirHash": "Y4H+RSJNnZLP3couRPVkS7jWQpI="
+    },
+    "connectionWithOtherDB": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "connectionWithOtherDBLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/connectionWithOtherDB-cloudformation-template.json",
+        "logicalId": "apiconnectionWithOtherDB"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.907Z",
+      "output": {
+        "ApiName": "connectionWithOtherDB",
+        "RootUrl": "https://4szlc1ku1g.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "4szlc1ku1g"
+      },
+      "lastPushDirHash": "a7IiWbmJytyJq1oedffgMMlsM5M="
+    },
+    "volunteerRequest": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "volunteerMainLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/volunteerRequest-cloudformation-template.json",
+        "logicalId": "apivolunteerRequest"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.916Z",
+      "output": {
+        "ApiName": "volunteerRequest",
+        "RootUrl": "https://rilq5mbkd2.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "rilq5mbkd2"
+      },
+      "lastPushDirHash": "HRR7sNU0YOFCgCwYxtOQkVTCAFQ="
+    },
+    "trackApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "trackApiLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/trackApi-cloudformation-template.json",
+        "logicalId": "apitrackApi"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.923Z",
+      "output": {
+        "ApiName": "trackApi",
+        "RootUrl": "https://ya7n65zdj4.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "ya7n65zdj4"
+      },
+      "lastPushDirHash": "4K2d1oiDEuflQpoVmKhOaqQTUn8="
+    },
+    "eventQuestions": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "eventQuestionsLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/eventQuestions-cloudformation-template.json",
+        "logicalId": "apieventQuestions"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.929Z",
+      "output": {
+        "ApiName": "eventQuestions",
+        "RootUrl": "https://zfra1npg2h.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "zfra1npg2h"
+      },
+      "lastPushDirHash": "Hnj1wk/mepSVpiT8DvcWPlhSqow="
+    },
+    "articleAPI": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "articleApiLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/articleAPI-cloudformation-template.json",
+        "logicalId": "apiarticleAPI"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.937Z",
+      "output": {
+        "ApiName": "articleAPI",
+        "RootUrl": "https://xbcnk03c1m.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "xbcnk03c1m"
+      },
+      "lastPushDirHash": "kvxfYeLzVVQN47tWv3+eA1RbKIc="
+    },
+    "activityApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "activityApiLambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/api/activityApi-cloudformation-template.json",
+        "logicalId": "apiactivityApi"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.976Z",
+      "output": {
+        "ApiName": "activityApi",
+        "RootUrl": "https://bxj4y1ayx3.execute-api.ap-south-1.amazonaws.com/dev",
+        "ApiId": "bxj4y1ayx3"
+      },
+      "lastPushDirHash": "cC8wqK2iWciA/SIthZ3cVjugkIA="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-zeshuser-dev-155508-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2021-03-16T17:19:50.953Z",
+      "output": {},
+      "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+    }
+  }
+}

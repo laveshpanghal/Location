@@ -1,0 +1,7 @@
+{
+    "tableName": "activityTable",
+    "partitionKeyName": "postTypeId",
+    "partitionKeyType": "S",
+    "sortKeyName": "userId",
+    "sortKeyType": "S"
+}

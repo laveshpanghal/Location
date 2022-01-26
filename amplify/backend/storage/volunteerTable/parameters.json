@@ -1,0 +1,7 @@
+{
+    "tableName": "volunteerTable",
+    "partitionKeyName": "eventId",
+    "partitionKeyType": "S",
+    "sortKeyName": "phoneNumber",
+    "sortKeyType": "S"
+}
